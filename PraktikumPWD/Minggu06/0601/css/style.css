@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap');
+
+body {
+  background: linear-gradient(to bottom right, #f9f8fd, #ece9f2);
+  background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  color: #d1b26f;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+
+form {
+  width: 450px;
+  margin: 0 auto 80px;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+fieldset {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 40px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+  font-weight: 600;
+  color: #5b3c91;
+  font-size: 1.1em;
+}
+
+form fieldset + legend {
+  display: block;
+  margin-top: 40px; 
+}
+
+
+legend {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #5e3a8a;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #4c3a70;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #c6b4df;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background-color: #faf8ff;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #8e60cf;
+  box-shadow: 0 0 5px rgba(142, 96, 207, 0.5);
+  outline: none;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+#simpan {
+  width: 100%;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #7c4bc0, #b583d0);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+#simpan:hover {
+  background: linear-gradient(135deg, #6c3fb0, #a86bc8);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 63, 176, 0.3);
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 85%;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
